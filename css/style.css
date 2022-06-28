@@ -65,7 +65,7 @@ form {
 .gen-box {
     display: flex;
     flex: 1 1 45%;
-    position: center;
+    position: relative;
 }
 
 .spacing {
@@ -74,7 +74,7 @@ form {
 
 label {
     font-weight: bold;
-    font-size: .9rem;
+    font-size: .8rem;
     padding: 3px;
 }
 
@@ -82,7 +82,7 @@ input {
     background: linear-gradient(rgba(83, 83, 83, 0.3), rgba(82, 82, 82, 0.3));
     padding: 6px;
     font-size: .9rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: 3px;
 }
 
@@ -96,6 +96,14 @@ input[type="submit"] {
     border-radius: 20px;
     height: 35px;
     cursor: pointer;
+}
+
+input[id="obs"] {
+    background: linear-gradient(rgba(83, 83, 83, 0.3), rgba(82, 82, 82, 0.3));
+    padding: 30px;
+    font-size: .9rem;
+    margin-bottom: 20px;
+    border-radius: 3px;
 }
 
 #agreement {
