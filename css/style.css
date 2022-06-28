@@ -3,63 +3,117 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
     border: none;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus{
+    outline: none;
+}
+
+a {
+    color: #4e1c1c;
 }
 
 body {
-    font-family: Helvetica, sans-serif;
-    color: #fff
-}
-
-section{
-    position: relative;
-    height: 100vh;
-    width: 100%;
+    padding-top: 10vh;
     background-image: url('../img/coffee.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* form */
-.form-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+#form-container {
     width: 500px;
-    padding: 50px 40px;
-    border-radius: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9));
     box-shadow: 1px 1px 20px #000;
+    border-radius: 5px;
+    padding: 50px;
 }
 
-h1 {
-    font: 1em;
-    font-size: 30px;
+#form-container h1{
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 25px;
+    font-size: 1.6em;    
 }
 
-.control input{
-    width: 100%;
-    display: block;
-    padding: 10px;
-    color: #fff;
-    border: none;
-    outline: none;
-    margin: 1em 0;
-    background: linear-gradient(rgba(172, 172, 172, 0.1), rgba(172, 172, 172, 0.1));
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.control input[type="submit"]{
-    background-color: #4e1c1c;
-    color: #fff;
-    border: none;
-    font-size: 1.2em;
-    opacity: .9;
-    transition: opacity .3s ease;
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
 }
 
-.control input[type="submit"]:hover{
-    opacity: 1;
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.gen-box {
+    display: flex;
+    flex: 1 1 45%;
+    position: center;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .9rem;
+    padding: 3px;
+}
+
+input {
+    background: linear-gradient(rgba(83, 83, 83, 0.3), rgba(82, 82, 82, 0.3));
+    padding: 6px;
+    font-size: .9rem;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+
+input:focus {
+    border-color: #351818;
+}
+
+input[type="submit"] {
+    background-color: #290505;
+    font-size: 1rem;
+    border-radius: 20px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#agreement {
+    margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+.error-validation{
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template {
+    display: none;
 }
