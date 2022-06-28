@@ -1,4 +1,65 @@
-h1{
-    color: aqua;
-    font-size: 50px;
+/* geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: #fff
+}
+
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/coffee.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+/* form */
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    width: 500px;
+    padding: 50px 40px;
+    border-radius: 1px;
+    box-shadow: 1px 1px 20px #000;
+}
+
+h1 {
+    font: 1em;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.control input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+    background: linear-gradient(rgba(172, 172, 172, 0.1), rgba(172, 172, 172, 0.1));
+}
+
+.control input[type="submit"]{
+    background-color: #4e1c1c;
+    color: #fff;
+    border: none;
+    font-size: 1.2em;
+    opacity: .9;
+    transition: opacity .3s ease;
+}
+
+.control input[type="submit"]:hover{
+    opacity: 1;
 }
