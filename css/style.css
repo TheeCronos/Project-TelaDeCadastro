@@ -95,14 +95,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[id="obs"] {
-    background: linear-gradient(rgba(83, 83, 83, 0.3), rgba(82, 82, 82, 0.3));
-    padding: 30px;
-    font-size: .9rem;
-    margin-bottom: 20px;
-    border-radius: 3px;
-}
-
 #agreement {
     margin-right: 5px;
 }

@@ -3,6 +3,7 @@ class Validator {
     constructor() {
         this.validations = [
             'data-min-length',
+            'data-max-length',
         ]
     }
 
@@ -55,6 +56,19 @@ class Validator {
         }
     }
 
+    // método para validar se passou do máximo de caracteres
+    maxlength(input, maxValue) {
+
+        let inputLength = input.value.length;
+
+        let errorMessage = `O campo precisa ter menos que ${maxValue} caracteres`;
+
+        if(inputLength > maxValue) {
+        this.printMessage(input, errorMessage);
+        }
+
+    }
+
     // método para imprimir mensagens de erro na tela
     printMessage(input, msg) {
   
@@ -89,7 +103,7 @@ let validator = new Validator();
 
 // evento de envio do form, que valida os inputs
 submit.addEventListener('click', function(e) {
-    
+
     e.preventDefault();
 
     validator.validate(form);
