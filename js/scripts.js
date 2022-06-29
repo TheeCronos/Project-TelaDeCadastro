@@ -75,6 +75,11 @@ class Validator {
           inputParent.appendChild(template);
         }
     }
+
+    // remove todas as validações para fazer a checagem novamente
+    cleanValidations(validations) {
+        validations.forEach(el => el.remove());
+    }
 }
 
 let form = document.getElementById('register-form');
