@@ -89,7 +89,8 @@ let validator = new Validator();
 
 // evento de envio do form, que valida os inputs
 submit.addEventListener('click', function(e) {
-  e.preventDefault();
+    
+    e.preventDefault();
 
-  validator.validate(form);
+    validator.validate(form);
 });
