@@ -10,11 +10,8 @@
 
 input, label {
     display: block;
-    width: 100%;
-}
-
-input:focus, label:focus{
     outline: none;
+    width: 100%;
 }
 
 a {
@@ -30,17 +27,17 @@ body {
 }
 
 /* form */
-#form-container {
+#main-container {
     width: 500px;
     margin-left: auto;
     margin-right: auto;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9));
     box-shadow: 1px 1px 20px #000;
     border-radius: 5px;
-    padding: 50px;
+    padding: 35px;
 }
 
-#form-container h1{
+#main-container h1{
     text-align: center;
     margin-bottom: 25px;
     font-size: 1.6em;    
@@ -75,14 +72,13 @@ form {
 label {
     font-weight: bold;
     font-size: .8rem;
-    padding: 3px;
 }
 
 input {
     background: linear-gradient(rgba(83, 83, 83, 0.3), rgba(82, 82, 82, 0.3));
-    padding: 6px;
+    padding: 10px;
     font-size: .9rem;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     border-radius: 3px;
 }
 
@@ -93,6 +89,7 @@ input:focus {
 input[type="submit"] {
     background-color: #290505;
     font-size: 1rem;
+    border: none;
     border-radius: 20px;
     height: 35px;
     cursor: pointer;
@@ -115,12 +112,12 @@ input[id="obs"] {
     width: auto;
 }
 
-.error-validation{
+.error-validation {
     color: #ff1a1a;
     position: absolute;
     top: 57px;
-    font-size: .8rem;
-}
+    font-size: 12px;
+  }
 
 .template {
     display: none;
